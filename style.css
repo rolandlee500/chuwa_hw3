@@ -1,0 +1,67 @@
+:root {
+  --primary-color: #b39ddb;
+  --p-light: #e6ceff;
+  --p-dark: #836fa9;
+}
+
+table,
+th,
+td,
+tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+th {
+  background-color: var(--p-dark);
+  color: white;
+}
+
+tr:nth-child(even),
+li:nth-child(even) {
+  background-color: var(--p-light);
+}
+
+tr:nth-child(odd),
+li:nth-child(odd) {
+  background-color: var(--primary-color);
+}
+
+#age-field {
+  width: 100px;
+}
+
+.search-field {
+  width: clamp(150px, 25%, 500px);
+  border: 1px solid gray;
+  border-radius: 20px;
+  height: 25px;
+  margin-bottom: 25px;
+}
+
+.list-container {
+  width: clamp(150px, 25%, 500px);
+}
+
+ol *,
+ul * {
+  padding: 5px;
+}
+
+li:hover {
+  background-color: gray;
+  color: white;
+}
+
+li::marker {
+  color: black;
+}
+
+select {
+  padding: 5px;
+  background-color: gray;
+  color: white;
+}
